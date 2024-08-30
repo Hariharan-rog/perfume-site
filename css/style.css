@@ -1,0 +1,447 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  /* background-image: url(../img/perfume\ background\ 11.jpg); */
+  background-repeat: no-repeat;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+/* header section start */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 0;
+  background: pink;
+
+  z-index: 100;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 32px;
+  color: white;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.navbar a {
+  position: relative;
+  font-size: 18px;
+  color: white;
+  font-weight: 500;
+  text-decoration: none;
+  margin-left: 40px;
+}
+
+.navbar a::before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: black;
+  transition: 0.3s;
+}
+
+.navbar a:hover::before {
+  width: 100%;
+}
+/* header section ends  */
+
+/* three cards div class */
+.card-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 100px;
+  background-color: none;
+  color: pink;
+}
+
+/* card starts  */
+/* each card class name  */
+.card {
+  width: 30%;
+  background-color: black;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  margin: 20px;
+  transition: transform 0.6s ease;
+}
+.card:hover {
+  transform: translateY(-20px);
+}
+.card img {
+  width: 100%;
+  height: auto;
+}
+.card-content {
+  padding: 16px;
+}
+.card-content h3 {
+  font-size: 28px;
+  margin-bottom: 8px;
+}
+.card-content p {
+  color: pink;
+  font-size: 15px;
+  line-height: 1.3;
+}
+.card-content .btn {
+  display: inline-block;
+  padding: 8px 16px;
+  background-color: pink;
+  text-decoration: none;
+  border-radius: 4px;
+  margin-top: 16px;
+  color: black;
+}
+/* card ends  */
+
+/* about us section */
+.hero {
+  background-color: transparent;
+  overflow: hidden;
+}
+
+.heading h1 {
+  color: black;
+  font-size: 55px;
+  text-align: center;
+  margin-top: 35px;
+}
+.about-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  margin: 65px auto;
+}
+
+.hero-content {
+  flex: 1;
+  width: 600px;
+  margin: 0px 25px;
+  animation: fadeinup 2s ease;
+}
+
+.hero-content h2 {
+  font-size: 38px;
+  margin-bottom: 20px;
+  color: black;
+}
+
+.hero-content p {
+  font-size: 24px;
+  line-height: 1.5;
+  margin-bottom: 40px;
+  color: black;
+}
+
+.hero-content button {
+  display: inline-block;
+  background-color: pink;
+  color: black;
+  padding: 12px 24px;
+  border-radius: 5px;
+  font-size: 20px;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.hero-content button:hover {
+  background-color: palevioletred;
+  transform: scale(1.1);
+}
+
+.hero-image {
+  flex: 1;
+  width: 600px;
+  margin: auto;
+}
+.perfume {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  animation: fadeInRight 2s ease;
+}
+/* about us section ends */
+
+/* footer section starts */
+footer {
+  background-color: pink;
+}
+.footerContainer {
+  width: 100%;
+  padding: 70px 30px 20px;
+}
+.socialIcons {
+  display: flex;
+  justify-content: center;
+}
+.socialIcons a {
+  text-decoration: none;
+  padding: 10px;
+  background-color: black;
+  margin: 10px;
+  border-radius: 50%;
+}
+.socialIcons a i {
+  font-size: 2em;
+  color: pink;
+  opacity: 0, 9;
+}
+/* Hover affect on social media icon */
+.socialIcons a:hover {
+  background-color: pink;
+  transition: 0.5s;
+}
+.socialIcons a:hover i {
+  color: black;
+  transition: 0.5s;
+}
+.footerNav {
+  margin: 30px 0;
+}
+.footerNav ul {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+}
+.footerNav ul li a {
+  color: white;
+  margin: 20px;
+  text-decoration: none;
+  font-size: 1.3em;
+  opacity: 0.7;
+  transition: 0.5s;
+}
+.footerNav ul li a:hover {
+  opacity: 1;
+}
+.footerBottom {
+  background-color: pink;
+  padding: 20px;
+  text-align: center;
+}
+.footerBottom p {
+  color: black;
+}
+/* footer section ends  */
+
+/* media query tab start */
+
+@media screen and (max-width: 768px) {
+  .heading h1 {
+    font-size: 45px;
+    margin-top: 30px;
+  }
+
+  .hero {
+    margin: 0px;
+  }
+
+  .container {
+    width: 100%;
+    flex-direction: column;
+    margin: 0px;
+    padding: 0px 40px;
+  }
+
+  .hero-content {
+    width: 100%;
+    margin: 35px 0px;
+  }
+
+  .hero-content h2 {
+    font-size: 30px;
+  }
+
+  .hero-content p {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+
+  .hero-content button {
+    font-size: 16px;
+    padding: 8px 16px;
+  }
+
+  .hero-image {
+    width: 100%;
+  }
+  .card {
+    width: 70%;
+  }
+  .about-container {
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  header {
+    display: none;
+  }
+}
+/* media query tab end */
+
+/* media query phone 425 start */
+@media screen and (max-width: 425px) {
+  .card {
+    width: 90%;
+  }
+}
+/* media query phone 425 end */
+
+/* media query phone 375 start */
+@media screen and (max-width: 375px) {
+  .card {
+    width: 90%;
+  }
+}
+/* media query phone 375 end */
+
+/* media query phone 320 start */
+@media screen and (max-width: 320px) {
+  .card {
+    width: 90%;
+  }
+}
+/* media query phone 320 end */
+
+/* media query footer */
+@media (max-width: 768px) {
+  .footerNav ul {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 35px;
+  }
+  .footerNav ul li {
+    width: 100%;
+    text-align: center;
+    margin: 10px;
+  }
+  .socialIcons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    font-size: 25px;
+  }
+  .socialIcons a {
+    padding: 8px;
+    margin: 4px;
+  }
+}
+@media (max-width: 425px) {
+  .footerNav ul {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 20px;
+  }
+  .footerNav ul li {
+    width: 100%;
+    text-align: center;
+    margin: 10px;
+  }
+  .socialIcons {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    font-size: 18px;
+  }
+  .socialIcons a {
+    padding: 8px;
+    margin: 4px;
+  }
+}
+@media (max-width: 375px) {
+  .footerNav ul {
+    flex-direction: column;
+  }
+  .footerNav ul li {
+    width: 100%;
+    text-align: center;
+    margin: 10px;
+  }
+  .socialIcons {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    font-size: 18px;
+  }
+  .socialIcons a {
+    padding: 8px;
+    margin: 4px;
+  }
+}
+@media (max-width: 320px) {
+  .footerNav ul {
+    flex-direction: column;
+  }
+  .footerNav ul li {
+    width: 100%;
+    text-align: center;
+    margin: 10px;
+  }
+  .socialIcons {
+    display: flex;
+    justify-content: center;
+    gap: 3px;
+    font-size: 12px;
+  }
+  .socialIcons a {
+    padding: 8px;
+    margin: 4px;
+  }
+}
+/* media query footer end  */
+
+/* @keyframes fadeInUp{
+        0%{
+            opacity: 0;
+            transform: translatey(50px);
+        }
+
+        100%{
+            opacity: 1;
+            transform: translatey(0px);
+        }
+    }
+
+    
+    @keyframes fadeInRight{
+        0%{
+            opacity: 0;
+            transform: translateX(-50px);
+        }
+
+        100%{
+            opacity: 1;
+            transform: translateX(0px);
+        }
+    } */

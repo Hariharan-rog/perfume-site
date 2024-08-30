@@ -1,0 +1,374 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 100px;
+  background: pink;
+  display: flex;
+  justify-content: space-between;
+  z-index: 100;
+  align-items: center;
+}
+.navbar a {
+  position: relative;
+  font-size: 18px;
+  color: white;
+  font-weight: 500;
+  text-decoration: none;
+  margin-left: 40px;
+}
+
+.navbar a::before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: black;
+  transition: 0.3s;
+}
+
+.navbar a:hover::before {
+  width: 100%;
+}
+.logo {
+  font-size: 32px;
+  color: white;
+  text-decoration: none;
+  font-weight: 700;
+}
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: #fafafa;
+  background: url(../img/perfume\ background\ 8.jpg);
+  background-size: cover;
+}
+.wrapper h1 {
+  font-size: 3em;
+  margin: 25px 0;
+  text-align: center;
+  font-weight: 500;
+  color: rgb(255, 0, 82);
+  margin-top: 100px;
+}
+.content-box {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 1000px;
+  margin-top: 30px;
+}
+.card {
+  min-height: 220px;
+  width: 320px;
+  padding: 30px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: #fff;
+  margin: 10px 4px;
+  box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.2);
+  transition: 0.3s ease;
+}
+.card i {
+  margin: 20px;
+  color: #ff5724;
+}
+.card h2 {
+  margin-bottom: 12px;
+  font-weight: 400;
+  text-align: center;
+}
+.card p {
+  color: #6c757d;
+  text-align: center;
+}
+.card:hover i,
+.card:hover p {
+  color: #fff;
+}
+.card:hover h2 {
+  font-weight: 600;
+  color: #f2f2f2;
+}
+
+.card:nth-child(1):hover {
+  background: linear-gradient(
+      45deg,
+      rgba(255, 28, 8, 0.7) 0%,
+      rgba(255, 0, 87, 0.7) 100%
+    ),
+    url(../img/perfume\ about\ 2.png);
+  background-size: cover;
+}
+.card:nth-child(2):hover {
+  background: linear-gradient(
+      45deg,
+      rgba(255, 28, 8, 0.7) 0%,
+      rgba(255, 0, 87, 0.7) 100%
+    ),
+    url(../img/perfume\ about\ 2.png);
+  background-size: cover;
+}
+.card:nth-child(3):hover {
+  background: linear-gradient(
+      45deg,
+      rgba(255, 28, 8, 0.7) 0%,
+      rgba(255, 0, 87, 0.7) 100%
+    ),
+    url(../img/perfume\ about\ 2.png);
+  background-size: cover;
+}
+.card:nth-child(4):hover {
+  background: linear-gradient(
+      45deg,
+      rgba(255, 28, 8, 0.7) 0%,
+      rgba(255, 0, 87, 0.7) 100%
+    ),
+    url(../img/perfume\ about\ 2.png);
+  background-size: cover;
+}
+.card:nth-child(5):hover {
+  background: linear-gradient(
+      45deg,
+      rgba(255, 28, 8, 0.7) 0%,
+      rgba(255, 0, 87, 0.7) 100%
+    ),
+    url(../img/perfume\ about\ 2.png);
+  background-size: cover;
+}
+.card:nth-child(6):hover {
+  background: linear-gradient(
+      45deg,
+      rgba(255, 28, 8, 0.7) 0%,
+      rgba(255, 0, 87, 0.7) 100%
+    ),
+    url(../img/perfume\ about\ 2.png);
+  background-size: cover;
+}
+
+footer {
+  background-color: pink;
+}
+.footerContainer {
+  width: 100%;
+  padding: 70px 30px 20px;
+}
+.socialIcons {
+  display: flex;
+  justify-content: center;
+}
+.socialIcons a {
+  text-decoration: none;
+  padding: 10px;
+  background-color: black;
+  margin: 10px;
+  border-radius: 50%;
+}
+.socialIcons a i {
+  font-size: 2em;
+  color: pink;
+  opacity: 0, 9;
+}
+/* Hover affect on social media icon */
+.socialIcons a:hover {
+  background-color: pink;
+  transition: 0.5s;
+}
+.socialIcons a:hover i {
+  color: black;
+  transition: 0.5s;
+}
+.footerNav {
+  margin: 30px 0;
+}
+.footerNav ul {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+}
+.footerNav ul li a {
+  color: white;
+  margin: 20px;
+  text-decoration: none;
+  font-size: 1.3em;
+  opacity: 0.7;
+  transition: 0.5s;
+}
+.footerNav ul li a:hover {
+  opacity: 1;
+}
+.footerBottom {
+  background-color: pink;
+  padding: 20px;
+  text-align: center;
+}
+.footerBottom p {
+  color: black;
+}
+.designer {
+  opacity: 0.7;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 400;
+  margin: 0px 5px;
+}
+
+/* media query starts */
+@media (max-width: 991px) {
+  .wrapper {
+    padding: 25px;
+  }
+  .wrapper h1 {
+    font-size: 2.5em;
+    font-weight: 600;
+  }
+  .content-box {
+    flex-direction: column;
+    width: 100%;
+  }
+  .card {
+    min-width: 300px;
+    margin: 10px auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    display: none;
+  }
+  .card {
+    font-size: 25px;
+    height: 500px;
+    width: 60%;
+  }
+  .wrapper p {
+    font-size: 21px;
+  }
+
+  .wrapper h1 {
+    font-size: 55px;
+  }
+}
+@media (max-width: 320px) {
+  .card {
+    width: 100%;
+    margin-left: -14px;
+    font-size: 15px;
+    height: 300px;
+  }
+  .card p {
+    font-size: 15px;
+  }
+  .wrapper p {
+    font-size: 16px;
+  }
+  .wrapper h1 {
+    font-size: 44px;
+  }
+}
+
+/* media query ends */
+
+/* media query footer starts */
+@media (max-width: 768px) {
+  .footerNav ul {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 35px;
+  }
+  .footerNav ul li {
+    width: 100%;
+    text-align: center;
+    margin: 10px;
+  }
+  .socialIcons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    font-size: 25px;
+  }
+  .socialIcons a {
+    padding: 8px;
+    margin: 4px;
+  }
+}
+@media (max-width: 425px) {
+  .footerNav ul {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 20px;
+  }
+  .footerNav ul li {
+    width: 100%;
+    text-align: center;
+    margin: 10px;
+  }
+  .socialIcons {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    font-size: 18px;
+  }
+  .socialIcons a {
+    padding: 8px;
+    margin: 4px;
+  }
+}
+@media (max-width: 375px) {
+  .footerNav ul {
+    flex-direction: column;
+  }
+  .footerNav ul li {
+    width: 100%;
+    text-align: center;
+    margin: 10px;
+  }
+  .socialIcons {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    font-size: 18px;
+  }
+  .socialIcons a {
+    padding: 8px;
+    margin: 4px;
+  }
+}
+@media (max-width: 320px) {
+  .footerNav ul {
+    flex-direction: column;
+  }
+  .footerNav ul li {
+    width: 100%;
+    text-align: center;
+    margin: 10px;
+  }
+  .socialIcons {
+    display: flex;
+    justify-content: center;
+    gap: 3px;
+    font-size: 12px;
+  }
+  .socialIcons a {
+    padding: 8px;
+    margin: 4px;
+  }
+}
+/* media query footer ends */
